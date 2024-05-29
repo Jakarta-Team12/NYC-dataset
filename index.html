@@ -8,6 +8,8 @@
 
   <!-- Style CSS -->
   <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -21,7 +23,7 @@
         <div class="dropdown-content">
         </div>
       </div>
-      <a href="#dashboard" class="dropbtn">Borough &#9662;</a>
+      <a href="#Borough" class="dropbtn">Borough &#9662;</a>
       <div class="dropdown-content">
       </div>
     </div>
@@ -43,31 +45,37 @@
 
   <div class="stats-table">
         <div class="item">
-          <h4>Houses</h4>
-          <p>1.6K</p>
+          <h4>Total Sales Staten Island</h4>
+          <p>3.266.810.855</p>
         </div>
         <div class="item">
-          <h4>Sales Total</h4>
-          <p>200M</p>
+          <h4>Total Residensial Unit</h4>
+          <p>4.771</p>
         </div>
         <div class="item">
-          <h4>Cost Total</h4>
-          <p>180M</p>
-        </div>
-        <div class="item">
-          <h4>Profit</h4>
-          <p>20M</p>
+          <h4>Total Sales Residensial Unit</h4>
+          <p>1.578.032.728</p>
         </div>
   </div>
 
-  <div class="charts">
+  <div class="chart-container">
     <div class="chart">
-      <h2>Sales Trend by Borough</h2>
+        <h2>SALES TOTAL PER BOROUGH</h2>
+        <canvas id="chartTotalSalesByBorough" width="400" height="100"></canvas>
     </div>
-    <div class="chart" id="line-chart">
-      <h2>Table Data</h2>
+
+    <div class="charts">
+        <div class="chartt">
+            <h2>SALES TREND PER MONTH</h2>
+            <canvas id="lineChartSalesTrend"></canvas>
+        </div> 
+        <div class="chartt">
+            <h2>TOP 5 BUILDING CLASS</h2>
+            <canvas id="PieChartTop5"></canvas>
+        </div> 
     </div>
-  </div>
+</div>
+
 
   <!-- services -->
   <div class="footer-text">
@@ -79,12 +87,12 @@
     <div class="container">
       <div class="team-grid">
         <div class="team-leader">
-          <div class="icon"><i class="fas fa-user"></i></div>
+          <div class="icon"><i class="fas fa-user"><img src="images/raihan.png"></i></div>
           <h4>Raihan Fadhilah</h4>
           <p>Team Leader</p>
         </div>
         <div class="team-member">
-          <div class="icon"><i class="fas fa-user"></i></div>
+          <div class="icon"><i class="fas fa-user"><img src="images/Habsi.jpg"></i></div>
           <h4>Habsi Bintang</h4>
           <p>Front End Engineer</p>
         </div>
@@ -94,42 +102,42 @@
           <p>Front End Engineer</p>
         </div>
         <div class="team-member">
-          <div class="icon"><i class="fas fa-user"></i></div>
+          <div class="icon"><i class="fas fa-user"><img src="images/ulfii.png"></i></div>
           <h4>Ulfitasari</h4>
           <p>Front End Engineer</p>
         </div>
         <div class="team-member">
-          <div class="icon"><i class="fas fa-user"></i></div>
+          <div class="icon"><i class="fas fa-user"><img src="images/Yusuf.png"></i></div>
           <h4>Yusuf Habibulloh</h4>
           <p>Front End Engineer</p>
         </div>
         <div class="team-member">
-          <div class="icon"><i class="fas fa-user"></i></div>
+          <div class="icon"><i class="fas fa-user"><img src="images/Vanka.jpg"></i></div>
           <h4>Vanka Alba</h4>
           <p>Deployment Team</p>
         </div>
         <div class="team-member">
-          <div class="icon"><i class="fas fa-user"></i></div>
+          <div class="icon"><i class="fas fa-user"><img src="images/ida.png"></i></div>
           <h4>Ida Masluha</h4>
           <p>Pitch Deck Team</p>
         </div>
         <div class="team-member">
-          <div class="icon"><i class="fas fa-user"></i></div>
+          <div class="icon"><i class="fas fa-user"><img src="images/lova.jpeg"></i></div>
           <h4>Ravitilova</h4>
           <p>Pitch Deck Team</p>
         </div>
         <div class="team-member">
-          <div class="icon"><i class="fas fa-user"></i></div>
+          <div class="icon"><i class="fas fa-user"><img src="images/shalsa.jpeg"></i></div>
           <h4>Shalsa Salisa Az Zahra</h4>
           <p>Pitch Deck Team</p>
         </div>
         <div class="team-member">
-          <div class="icon"><i class="fas fa-user"></i></div>
+          <div class="icon"><i class="fas fa-user"><img src="images/fidela.jpg"></i></div>
           <h4>Fidela Citra Imanda</h4>
           <p>Quality Assurance</p>
         </div>
         <div class="team-member">
-          <div class="icon"><i class="fas fa-user"></i></div>
+          <div class="icon"><i class="fas fa-user"><img src="images/Muhdad.jpg"></i></div>
           <h4>Muhdad Alfaris Bachmid</h4>
           <p>Quality Assurance</p>
         </div>
@@ -149,3 +157,5 @@
 </body>
 
 </html>
+
+
